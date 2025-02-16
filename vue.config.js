@@ -1,4 +1,13 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
+
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  publicPath: '/your-repo-name/', // Your GitHub repo name
+  transpileDependencies: true, // Add this if necessary for transpiling dependencies
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [require('tailwindcss'), require('autoprefixer')],
+      },
+    },
+  },
+});

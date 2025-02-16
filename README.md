@@ -1,24 +1,9 @@
-# vuejs-tailwind-todo
+# Vue.js Todo App with Tailwind CSS
 
-## Project setup
-```
-npm install
-```
+A simple todo application built with Vue.js 3 and styled with Tailwind CSS.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Create, read, update and delete todos
+- Responsive design with Tailwind CSS
+- Modern Vue.js 3 composition API
