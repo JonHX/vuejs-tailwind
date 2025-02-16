@@ -1,9 +1,6 @@
 name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches:
-      - main 
+on: [push]
 permissions:
   contents: write
 
@@ -45,8 +42,4 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages 
         folder: dist
-        clean: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.APP_TOKEN }} 
