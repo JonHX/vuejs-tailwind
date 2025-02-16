@@ -9,6 +9,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest 
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
 
     steps:
     # Step 1: Checkout the repository
