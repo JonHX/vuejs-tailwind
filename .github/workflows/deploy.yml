@@ -19,6 +19,10 @@ jobs:
     - name: Remove existing temp deployment folder
       run: rm -rf github-pages-deploy-action-temp-deployment-folder
     
+    - name: Create a new worktree
+      run: git worktree add --no-checkout --detach github-pages-deploy-action-temp-deployment-folder
+    
+    
     # Step 2: Set up Node.js
     - name: Set up Node.js
       uses: actions/setup-node@v2
